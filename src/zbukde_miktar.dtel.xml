@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZBUKDE_MIKTAR</ROLLNAME>
+    <HEADLEN>18</HEADLEN>
+    <SCRLEN1>06</SCRLEN1>
+    <SCRLEN2>18</SCRLEN2>
+    <SCRLEN3>18</SCRLEN3>
+    <DTELMASTER>E</DTELMASTER>
+    <DATATYPE>DEC</DATATYPE>
+    <LENG>000010</LENG>
+    <DECIMALS>000003</DECIMALS>
+    <OUTPUTLEN>000013</OUTPUTLEN>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>miktar DataElement</DDTEXT>
+     <REPTEXT>miktar DataElement</REPTEXT>
+     <SCRTEXT_S>Miktar</SCRTEXT_S>
+     <SCRTEXT_M>miktar DataElement</SCRTEXT_M>
+     <SCRTEXT_L>miktar DataElement</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

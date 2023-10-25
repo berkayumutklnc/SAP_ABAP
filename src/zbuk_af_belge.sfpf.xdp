@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.1.20140218.1.907162_SAP" APIVersion="3.6.13324.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2023-08-02T14:07:33Z" uuid="7f5653c1-74eb-46a1-8093-196f3ef27195">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <subform layout="tb" locale="en_US" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="130.175mm" name="table" w="203.2mm" x="6.35mm" y="82.55mm"/>
+            <medium long="11in" short="8.5in" stock="letter"/>
+            <subform h="57.15mm" name="footer" w="203.2mm" x="6.35mm" y="215.9mm">
+               <bind match="none"/>
+               <field h="13.594mm" name="Code128ABarcode1" w="36.844mm" x="82.55mm" y="34.925mm">
+                  <ui>
+                     <barcode checksum="auto" dataLength="10" textLocation="belowEmbedded" type="code128A" wideNarrowRatio="fixed"/>
+                  </ui>
+                  <font typeface="Courier New"/>
+                  <value>
+                     <text xliff:rid="BC0619BC-1880-4682-8858-C266B282FE09">1234567890</text>
+                  </value>
+                  <bind match="dataRef" ref="$.GV_BARCODE"/>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <subform h="73.025mm" name="Header" w="203.2mm" x="6.35mm" y="6.35mm">
+               <bind match="none"/>
+               <field h="9mm" name="TextField1" w="62mm" x="139.7mm" y="28.575mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="25mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="7E75E0AD-BFEB-4F6F-ACB2-19894332C7C8">KULLANICI </text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.SFPSY.USERNAME"/>
+               </field>
+               <field h="9mm" name="TextField2" w="62mm" x="139.7mm" y="38.1mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="25mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="83759657-12C7-4D91-9AEB-AD2F1C97B21F">TARIH</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.SFPSY.DATE"/>
+               </field>
+               <field h="9mm" name="TextField3" w="62mm" x="139.7mm" y="47.625mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="25mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="135910E2-50E1-41E7-8B5D-A079C9271E6E">SAAT</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.SFPSY.TIME"/>
+               </field>
+               <draw h="9.525mm" name="Text1" w="85.725mm" x="53.975mm" y="6.35mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <value>
+                     <text xliff:rid="B4B23BF9-BB0B-431E-BDF6-A310BBEF7DCC">SATIS SIPARIS RAPORU</text>
+                  </value>
+                  <font baselineShift="0pt" size="16pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  <?renderCache.bounds 240166 24166 0 0 1417 1417 0 0?>
+                  <?renderCache.textRun 20 SATIS SIPARIS RAPORU 0 26820 14050 0 0 0 "Arial" 1 0 16000 ISO-8859-1?></draw>
+               <draw h="47.625mm" name="Image1" w="47.625mm" x="6.35mm" y="22.225mm">
+                  <value>
+                     <image contentType="image/jpeg">/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsK
+CwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQU
+FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wgARCADIAMgDASIA
+AhEBAxEB/8QAGwABAQADAQEBAAAAAAAAAAAAAAcFBggCBAP/xAAaAQEAAwEBAQAAAAAAAAAAAAAA
+AgMEAQUG/9oADAMBAAIQAxAAAAH9B9d4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAB0PLsWjSVqwpL3R2jQ7Kli2znecVCyd9cqXD7abIE3nbrYRhecDCUkd
+C4mHYgqGXthGF7glkQ0VAXDz40Dxd9Fh/SHN2iq4w62xKfFxh1tIlWJPVZx0Lbtq+3JdgPuw2w1T
+96Lvmgz5np9v2gaqaR7+r88V+z84dHc46Kw9TGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/8QAJxAAAgMAAQIFBAMAAAAAAAAABAUCAwYB
+ABYQICEzNRMUFYAxNDb/2gAIAQEAAQUC/RUCmhet1CngArIwjJSp0IIQECh5gMdIASDVqV0azyh1
+o794IxCxUOJVEaReNeEcvecV80IND3Wt6Bbr29n1g82zWMRWsSNIvGvW6IEWvutb1McLQLvI99M3
+TKOlQ5OHNazn+Rv8l4a34brEe05+VxX9yautlpibUQVy0pRaVs/lMT7Lj5VImDpV/f57pZaJcN5H
+s485vONfxptl44I/Q049qeGrnGSfrFT4jURm15N4QK9HFW8om+LQLzyAEYS4jZS4kzxU+I0t/Voj
+LGYJu1FvS8UdaP8Aor//xAAkEQABBAEDAwUAAAAAAAAAAAABAAIDERITITEyQmAQIjNBUv/aAAgB
+AwEBPwHwJ0Ra21pjYkp0Qb3IQg9yEYLsQVog7ByEY+ytIc3stEVeSEbf0nsw9XOp9HgqYUGhTcNU
+fS5Q9YTYiH5FDcW1SXp7p3xNQHtGFKfhviH/xAAnEQACAQQBAwIHAAAAAAAAAAABAgADBBESIRMx
+MyJgEBQ0QVFxof/aAAgBAgEBPwH2FTuhUfTE+YOWCrnES6ZzgJGunU4KQ1itPqMsN0wGxTiNWYY0
+TIguTyunMF05OunMNeoD45RrdXPGCPjTplqJZe4MtDuzv+Za93/cuPLTl34TKlwr0tB3jelgtTIG
+PtKGvX9P9lP6h4WG7dUmWWNnx7Q//8QAMxAAAgEDAQQHCAEFAAAAAAAAAQIDABESBCEiMbEQEzNB
+YXJzFCAjMkJRksGAUnF0k9H/2gAIAQEABj8C/grAtgqsFBNuJNCWJcYZe4dxraoPxDUUMqOZFvey
+j717YE+FgX+Xbap4o43DuthdBSgxyXA/oFddKm5e26tCKBGV8wdq2rVXAO1akidGyQ4myVIixhse
+KulSiQEwrwtt4iuzk/AUYEj3rXxkTjWqR0bq5lV0Ci9uN6cwx/JxyWpInjfJDibIKlEiOS0rOLL3
+Guzk/AUXjQbQcWxsyn3T5U5iirdtwPg476ZWFmWVgR0H/Gbkek+cdGq/utav1W51qPJ+61PXDKON
+VOP32UYZY4VdeI6q/wCqC6NYxNb6Y7fqo/RHM1qvMK1fqtzpdXqkVyy5kvtAFfJD/oP/ACstGFEN
+/pXHb7pGQvinMVZzaCTY3h41LqMlCHfJvxPQRkL+ztyPSbMDvDo1VyBtWpJXdsnORs9SOsgXLizv
+Wrd2wjmsFZvCmndzk/HF9lCaJ2ztbeeo7G/whzNaq5A3hWr9VudLpZHUME6tkJsa7R/zFdTE+7e+
+838Fv//EACQQAQACAQMEAgMBAAAAAAAAAAEAESExQVFhcYHwEMEggJGh/9oACAEBAAE/If0VtziW
+zGe6wvGUaG+ff9jhQ1U6Eyl1FGU89YjwVFGAvTxFaVcBf9lL0R7XeMb4GAuYGiWSFU8PWdT8i9mX
+NfoKs8ygusUYdyAw9qLUCa957V9ywxbQ0N+Y1ghLsxl5iLgQUjWO1PwCzzKjo4uSzee1fcYzqYQ/
+i1Q0iiQbIoWeB5fbG/MBqJU1u/5VC+u4fhj/AC4f7HrVZFX01lAksmnki1AVKut8/Dn73hnrOUSi
+wbsZ2+IGQoSkHLFH4mZNCMC32fZbeuZdw6TCrbvRFtgtMOrz8hihpj8dT8mtmXNfoKt8SgOsU4Ni
+GFPhhtL4shDNTStiUdxYCZiGQ1hn1Mxa2YxQ2OQ7osgGEmlnierfUypXYi2/ot//2gAMAwEAAgAD
+AAAAEAwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwihwh
+SBgCjQQw21yBF+R1CGYgwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+wwwwwwwwwwwwwwwwwwwwww//xAAjEQEAAgAEBgMAAAAAAAAAAAABABEhMWGhEEFgsdHhUYHB/9oA
+CAEDAQE/EOgsdb+dIVUNniDW7IGoMNPcB3NYKoXG2GI1EgB1REIU6e4ktBHo3Y8RPIKd4V7lf5Nh
+Nv5nfdpZgq2VYRVc5Ugg3yneRMAiucviZ45fXSH/xAAkEQEAAgIABQQDAAAAAAAAAAABABEhMVFx
+ocHhQWBhgRCRsf/aAAgBAgEBPxD2E2wbp41FWqYb43nXxLMcNOddIAaLrO+kf0E9L8SzM4r8S+Iw
+N8/qLUQSw455RSHTZfiMASc/ECpWwP52IZOkegoR3uGuah/a9pn9P9JTdsBrlGsQCvlRfeNFalPy
+nTnaVQ7eK1UyF0xV79faH//EACMQAQEAAgICAgIDAQAAAAAAAAERACExQVFhEHEg8ICBsaH/2gAI
+AQEAAT8Q/gq0hzDvj70t8UOMoXMKH4zoSA+hoyFbka/25BzF9RooXQ6yaNqDaXKWLVwkAJAjVRpi
+/wArCigHNzMZb8NKf7i+7s8mlRtGNCpKcfbiZbauiMeRrAbwq9sDk77GmsD+iKYnEWEX18JSItCI
+IRweeHFpgXsOgIdPWusr8/8A6FJF8OKljXJEYzSmJmAY8q3RnXwlsNphQBs3plLE/FWzkIjymbyf
+3qX0ARfRYdVr4MUfYmf9b8B37Xy/Ln9Z5Z+y8MS0KiBsI3wWvB1cnesdZBBQLE7x9bWX52g49/gV
+i3G5YaCqHC6C6WsOvhGQ4TTKciXjc/Hhxaq/TgeKjOF/mqPpeMVR0GqJ3i8A5W95QXlbjxHfTtxT
+5ve/GvL8FCrKdfbgZZaOisOBvATwi5sTg7eArrEfePxi58h33rL8UA0AUEegx8IUQ4joDA440SX0
+YVqsZ19uCeQiUTA4ojE3FGow04fr4CBOWzQi7J4/gt//2Q==</image>
+                  </value>
+                  <ui>
+                     <imageEdit/>
+                  </ui>
+                  <desc>
+                     <text name="embeddedHref">C:\Users\10130483\Desktop\1625338964006.jpg</text>
+                  </desc>
+               </draw>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform h="5.125in" w="8in">
+         <keep intact="none"/>
+         <subform columnWidths="33.3333mm 33.3333mm 33.3333mm 33.3333mm 33.3333mm 33.3333mm" layout="table" name="GT_ALL" x="3.175mm" y="3.175mm">
+            <subform id="overflowLeader_ID" layout="row" name="overflowLeader">
+               <draw>
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="90C598A0-F2CC-4D3F-940E-8FF11BE5D2A5">SATIN ALMA BELGESI</text>
+                  </value>
+                  <font baselineShift="0pt" size="8pt" typeface="Arial"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw>
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="17C33B3F-305B-4F6F-AF3C-79E2A6CF8D5F">SIRKET KODU</text>
+                  </value>
+                  <font baselineShift="0pt" size="8pt" typeface="Arial"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw>
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="1EA0AAED-381A-4374-AF03-63318BA93E4C">TARIH</text>
+                  </value>
+                  <font baselineShift="0pt" size="8pt" typeface="Arial"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw>
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="B0F9A602-1F37-4F2A-9EE8-5B8156C18871">SATICI</text>
+                  </value>
+                  <font baselineShift="0pt" size="8pt" typeface="Arial"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw>
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="DA380D74-90A4-431B-91AE-7FD4A0A6E06A">MALZEME</text>
+                  </value>
+                  <font baselineShift="0pt" size="8pt" typeface="Arial"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw>
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="B18BD561-5B87-4299-8A64-546FFEF4B20E">TANIM</text>
+                  </value>
+                  <font baselineShift="0pt" typeface="Arial"/>
+                  <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <assist role="TH"/>
+               <occur max="-1"/>
+               <bind match="none"/>
+               <?templateDesigner expand 1?></subform>
+            <subform layout="row" name="DATA">
+               <field h="9mm" name="EBELN" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+                  <bind match="dataRef" ref="$.EBELN"/>
+                  <desc>
+                     <text name="Schema Annotation">Satınalma belge numarası</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field h="9mm" name="BUKRS" w="62mm" x="2.440944in">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="4"/>
+                  </value>
+                  <bind match="dataRef" ref="$.BUKRS"/>
+                  <desc>
+                     <text name="Schema Annotation">Şirket kodu</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field h="9mm" name="EADAT" w="62mm" x="4.881889in">
+                  <ui>
+                     <dateTimeEdit>
+                        <margin/>
+                     </dateTimeEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <bind match="dataRef" ref="$.EADAT">
+                     <picture>date{YYYY-MM-DD}</picture>
+                  </bind>
+                  <desc>
+                     <text name="Schema Annotation">Satınalma belgesi yaratma tarihi</text>
+                  </desc>
+                  <validate nullTest="error"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field h="9mm" name="LIFNR" w="62mm" y="0.354333in">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+                  <bind match="dataRef" ref="$.LIFNR"/>
+                  <desc>
+                     <text name="Schema Annotation">Satıcının hesap numarası</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field h="9mm" name="MATNR" w="62mm" x="2.440944in" y="0.354333in">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="40"/>
+                  </value>
+                  <bind match="dataRef" ref="$.MATNR"/>
+                  <desc>
+                     <text name="Schema Annotation">Malzeme numarası</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field h="9mm" name="TXZ01" w="62mm" x="4.881889in" y="0.354333in">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="40"/>
+                  </value>
+                  <bind match="dataRef" ref="$.TXZ01"/>
+                  <desc>
+                     <text name="Schema Annotation">Kısa metin</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <assist role="TR"/>
+               <occur max="-1"/>
+               <bind match="dataRef" ref="$.DATA[*]"/>
+               <?templateDesigner expand 1?></subform>
+            <occur min="0"/>
+            <bind match="dataRef" ref="$.GT_ALL"/>
+            <desc>
+               <text name="Schema Annotation">Belge Programı Çıktı Table Type</text>
+            </desc>
+            <overflow leader="overflowLeader"/>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20140218.1.907162.903801</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 76 19 000300240025002600270028002A002B002C002E002F0030003100320035003600370038003D ABCDEGHIKLMNORSTUZ?>
+      <?renderCache.subset "Arial" 1 0 ISO-8859-1 4 36 9 00030024002C003200330035003600370038 AIOPRSTU?>
+      <?renderCache.subset "Courier New" 0 0 ISO-8859-1 4 40 10 0013001400150016001700180019001A001B001C0123456789?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000)?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 129?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://bfes13052.solco.global.nttdata.com:8000/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZBUK_AF_BELGE">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <GV_BARCODE/>
+         <SFPSY>
+            <DATE/>
+            <TIME/>
+            <USERNAME/>
+            <SUBRC/>
+         </SFPSY>
+         <GT_ALL dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <EBELN/>
+               <BUKRS/>
+               <EADAT/>
+               <LIFNR/>
+               <MATNR/>
+               <TXZ01/>
+            </DATA>
+         </GT_ALL>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2023-08-02T14:07:33Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:7f5653c1-74eb-46a1-8093-196f3ef27195</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20140218.1.907162.903801</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>
